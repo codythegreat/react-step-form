@@ -41,11 +41,11 @@ export class UserForm extends Component {
 
   // handle field changes
 
-  handleChange = input => e => {
+  handleChange = e => {
     this.setState({
-      [input]: e.target.value
-    })
-  };
+      [e.target.name]: e.target.value
+    });
+  }
 
   render() {
     const {
